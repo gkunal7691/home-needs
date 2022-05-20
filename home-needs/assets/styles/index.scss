@@ -1,0 +1,507 @@
+@import "./bootstrap-v5.0.2.min.scss";
+@import "./variables.scss";
+@import "./layout.scss";
+
+@import url("https://fonts.googleapis.com/css?family=Caveat");
+
+body {
+  position: relative;
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+body::before {
+  content: " ";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.12;
+  background-image: url(../images/Website-background.svg);
+  background-size: cover;
+  z-index: -1;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    max-width: 1140px;
+  }
+}
+
+// Mobile
+.navbar-dark .collapsed{
+  .navbar-toggler-icon {
+    background-image: url(../images/Burger-menu.svg);
+    transform: rotate(0deg);
+  }
+}
+.navbar-toggler{
+  .navbar-toggler-icon {
+    background-image: url(../images/Add.svg);
+    transform: rotate(-45deg);
+  }
+}
+
+//////////////////// Font Family
+
+.fnt-baby {
+  font-family: "Caveat", sans-serif;
+}
+
+.fnt-muli {
+  font-family: "Muli", sans-serif !important;
+}
+
+//////////////////// Font Color
+
+.text-clr54 {
+  color: #0f2154;
+}
+
+.text-clr0c {
+  color: #f77b0c;
+}
+
+.text-clrb5 {
+  color: #000000b5;
+}
+
+.bg-pink {
+  background-color: #fde0c64a;
+}
+
+.bg-gray {
+  background-color: #f5f0fd6a;
+}
+
+.bg-clr54 {
+  background-color: #0f2154;
+}
+
+.bg-clr0c {
+  background-color: #f77b0c;
+}
+
+.bg-clr11 {
+  background-color: #111111;
+}
+
+//////////////////// Font Size and weight
+
+@media (min-width: 320px) {
+  .fnt-12 {
+    font-size: 0.75rem;
+    line-height: 1.2;
+  }
+
+  .fnt-14 {
+    font-size: 0.875rem;
+  }
+
+  .fnt-16 {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+
+  .fnt-18 {
+    font-size: 1.125rem;
+    line-height: 1.2;
+  }
+
+  .fnt-20 {
+    font-size: 1.25rem;
+  }
+
+  .fnt-22 {
+    font-size: 1.375rem;
+  }
+
+  .fnt-24 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  .fnt-28 {
+    font-size: 1.75rem;
+  }
+
+  .fnt-32 {
+    font-size: 2rem;
+  }
+
+  .fnt-normal {
+    font-weight: 400;
+  }
+
+  .fnt-medium {
+    font-weight: 500;
+  }
+
+  .fnt-semi-bold {
+    font-weight: 600;
+  }
+
+  .fnt-bold {
+    font-weight: 700;
+  }
+
+  .fnt-500 {
+    font-weight: 500;
+  }
+
+  .fnt-600 {
+    font-weight: 600;
+  }
+
+  .fnt-700 {
+    font-weight: 700;
+  }
+}
+@media (min-width: 768px) {
+  .fnt-md-12 {
+    font-size: 0.75rem;
+  }
+
+  .fnt-md-14 {
+    font-size: 0.875rem;
+  }
+
+  .fnt-md-16 {
+    font-size: 1rem;
+  }
+
+  .fnt-md-18 {
+    font-size: 1.125rem;
+  }
+
+  .fnt-md-20 {
+    font-size: 1.25rem;
+  }
+
+  .fnt-md-22 {
+    font-size: 1.375rem;
+  }
+
+  .fnt-md-24 {
+    font-size: 1.5rem;
+  }
+
+  .fnt-md-28 {
+    font-size: 1.75rem;
+  }
+
+  .fnt-md-32 {
+    font-size: 2rem;
+  }
+
+  .fnt-md-35 {
+    font-size: 2.1875rem;
+  }
+
+  .fnt-md-40 {
+    font-size: 2.5rem;
+  }
+
+  .fnt-md-45 {
+    font-size: 2.8125rem;
+  }
+
+  .fnt-md-50 {
+    font-size: 3.125rem;
+  }
+
+  .fnt-md-normal {
+    font-weight: 400;
+  }
+
+  .fnt-md-medium {
+    font-weight: 500;
+  }
+
+  .fnt-md-semi-bold {
+    font-weight: 600;
+  }
+
+  .fnt-md-bold {
+    font-weight: 700;
+  }
+
+  .fnt-md-500 {
+    font-weight: 500;
+  }
+
+  .fnt-md-600 {
+    font-weight: 600;
+  }
+
+  .fnt-md-700 {
+    font-weight: 700;
+  }
+}
+@media (min-width: 992px) {
+  .fnt-mlg-16 {
+    font-size: 1rem;
+  }
+
+  .fnt-mlg-18 {
+    font-size: 1.125rem;
+  }
+
+  .fnt-mlg-20 {
+    font-size: 1.25rem;
+  }
+
+  .fnt-mlg-22 {
+    font-size: 1.375rem;
+  }
+
+  .fnt-mlg-24 {
+    font-size: 1.5rem;
+  }
+
+  .fnt-mlg-28 {
+    font-size: 1.75rem;
+  }
+
+  .fnt-mlg-32 {
+    font-size: 2rem;
+  }
+
+  .fnt-mlg-35 {
+    font-size: 2.1875rem;
+  }
+
+  .fnt-mlg-40 {
+    font-size: 2.5rem;
+  }
+
+  .fnt-mlg-45 {
+    font-size: 2.8125rem;
+  }
+
+  .fnt-mlg-50 {
+    font-size: 3.125rem;
+  }
+
+  .fnt-mlg-normal {
+    font-weight: 400;
+  }
+
+  .fnt-mlg-medium {
+    font-weight: 500;
+  }
+
+  .fnt-mlg-semi-bold {
+    font-weight: 600;
+  }
+
+  .fnt-mlg-bold {
+    font-weight: 700;
+  }
+
+  .fnt-mlg-500 {
+    font-weight: 500;
+  }
+
+  .fnt-mlg-600 {
+    font-weight: 600;
+  }
+
+  .fnt-mlg-700 {
+    font-weight: 700;
+  }
+
+  .bg-mlg-pink {
+    background-color: #fde0c64a;
+  }
+
+  .bg-mlg-gray {
+    background-color: #f5f0fd6a;
+  }
+
+  .bg-mlg-clr54 {
+    background-color: #0f2154;
+  }
+
+  .bg-mlg-clr0c {
+    background-color: #f77b0c;
+  }
+
+  .bg-mlg-clr11 {
+    background-color: #111111;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fnt-lg-16 {
+    font-size: 1rem;
+  }
+
+  .fnt-lg-18 {
+    font-size: 1.125rem;
+  }
+
+  .fnt-lg-20 {
+    font-size: 1.25rem;
+  }
+
+  .fnt-lg-22 {
+    font-size: 1.375rem;
+  }
+
+  .fnt-lg-24 {
+    font-size: 1.5rem;
+  }
+
+  .fnt-lg-28 {
+    font-size: 1.75rem;
+  }
+
+  .fnt-lg-32 {
+    font-size: 2rem;
+  }
+
+  .fnt-lg-35 {
+    font-size: 2.1875rem;
+  }
+
+  .fnt-lg-40 {
+    font-size: 2.5rem;
+  }
+
+  .fnt-lg-45 {
+    font-size: 2.8125rem;
+  }
+
+  .fnt-lg-50 {
+    font-size: 3.125rem;
+  }
+
+  .fnt-lg-normal {
+    font-weight: 400;
+  }
+
+  .fnt-lg-medium {
+    font-weight: 500;
+  }
+
+  .fnt-lg-semi-bold {
+    font-weight: 600;
+  }
+
+  .fnt-lg-bold {
+    font-weight: 700;
+  }
+
+  .fnt-lg-500 {
+    font-weight: 500;
+  }
+
+  .fnt-lg-600 {
+    font-weight: 600;
+  }
+
+  .fnt-lg-700 {
+    font-weight: 700;
+  }
+
+  .bg-lg-pink {
+    background-color: #fde0c64a;
+  }
+
+  .bg-lg-gray {
+    background-color: #f5f0fd6a;
+  }
+
+  .bg-lg-clr54 {
+    background-color: #0f2154;
+  }
+
+  .bg-lg-clr0c {
+    background-color: #f77b0c;
+  }
+
+  .bg-lg-clr11 {
+    background-color: #111111;
+  }
+}
+
+.accordion-item {
+  background-color: rgba(255, 255, 255, 0) !important;
+  .accordion-button {
+    background-color: rgba(255, 255, 255, 0) !important;
+    color: #0f2154;
+    font-size: 1.5625rem;
+    font-weight: 500;
+    padding: 0.5rem 1.25rem;
+    @media screen and (max-width: 767px) {
+      font-size: 1.125rem;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+.w-fit-content {
+  width: fit-content;
+}
+
+.pr-4 {
+  padding-right: 1.5rem !important;
+}
+
+.pr-5 {
+  padding-right: 3rem !important;
+}
+
+.pl-4 {
+  padding-left: 1.5rem !important;
+}
+
+@media screen and (max-height: 614px) and (max-width: 767px){
+  .pr-text{
+    font-size: 1.25rem;
+  }
+  .cloud-center {
+    font-size: 0.8125rem;
+  }    
+  .fnt-sm {
+      font-size: 1rem;
+  }
+  .fnt-sm-9{
+    font-size: .9rem;
+  }
+  .footer-icon-sm img{
+    height: 50px;
+  }
+  .chat-box {
+    height: 180px !important;
+  }
+  .help-process{
+    img{
+      height: 80px !important;
+    }
+  }
+  .fnt-sm-825 {
+    font-size: 0.825rem;
+  }
+  .hero-box {
+    .girl {
+      img {
+        height: 155px;
+      }
+    }
+  }
+  .fnt-sm-18{
+    font-size: 1.125rem;
+  }
+}
