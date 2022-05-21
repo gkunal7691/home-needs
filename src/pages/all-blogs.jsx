@@ -8,7 +8,7 @@ import breadcrumIcon from "../../assets/images/angle-right-solid.svg"
 
 
 export default function ContactUs({data}) {
-    const blogPosts = data.allContentfulEducation.edges.map(node => node.node)
+    const blogPosts = data.allContentfulHomeNeeds.edges.map(node => node.node)
     console.log(blogPosts);
   return (
     <Layout active={"all-blogs"}>
@@ -93,39 +93,33 @@ export default function ContactUs({data}) {
 }
 export const query = graphql`
 query pagesQuery {
-    allContentfulEducation {
-      edges {
-        node {
-          id
-          slug
+  allContentfulHomeNeeds {
+    edges {
+      node {
+        id
+        slug
+        title
+        description
+        authorName
+        postedAt
+        category
+        bannerImage {
           title
-          description
-          authorName
-          postedAt
-          category
-          isQuestion
-          faq {
-            answer
-            question
+          file {
+            url
           }
-          bannerImage {
+          gatsbyImageData(layout: CONSTRAINED)
+        }
+        content {
+          raw
+          references {
             title
-            file {
-              url
-            }
+            contentful_id
+            __typename
             gatsbyImageData(layout: CONSTRAINED)
-          }
-          content {
-            raw
-            references {
-              title
-              contentful_id
-              __typename
-              gatsbyImageData(layout: CONSTRAINED)
-            }
           }
         }
       }
     }
   }
-  `;
+}`;

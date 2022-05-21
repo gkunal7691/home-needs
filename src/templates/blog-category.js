@@ -7,7 +7,7 @@ import Seo from "../components/seo"
 import dateFormat from 'dateformat';
 
 export default function BlogCategory({ data }) {
-  const blogPosts = data.allContentfulEducation.edges.map(node => node.node)
+  const blogPosts = data.allContentfulHomeNeeds.edges.map(node => node.node)
 
 
   return (
@@ -95,7 +95,7 @@ export default function BlogCategory({ data }) {
 
 export const query = graphql`
   query FilterByCat($category: String!) {
-    allContentfulEducation(filter: { category: { eq: $category } }) {
+    allContentfulHomeNeeds(filter: { category: { eq: $category } }) {
       edges {
         node {
           id

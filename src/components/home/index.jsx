@@ -4,7 +4,7 @@ import "../../../assets/styles/blog.scss"
 
 
 export default function Home() {
-  const categorires = ["Physics", "Chemistry", "Maths", "Biology", "General"]
+  const categorires = ["Livingroom","Bedroom"]
 
   return (
    <>
