@@ -8,51 +8,49 @@ exports.createPages = ({ graphql, actions }) => {
 
   return graphql(
     `
-      query pagesQuery {
-        allContentfulEducation {
-          edges {
-            node {
-              id
-              slug
+    query pagesQuery {
+      allContentfulHomeNeeds {
+        edges {
+          node {
+            id
+            slug
+            title
+            description
+            authorName
+            postedAt
+            category
+            bannerImage {
               title
-              description
-              authorName
-              postedAt
-              category
-              isQuestion
-              faq {
-                answer
-                question
+              file {
+                url
               }
-              bannerImage {
+              gatsbyImageData(layout: CONSTRAINED)
+            }
+            content {
+              raw
+              references {
                 title
-                file {
-                  url
-                }
+                contentful_id
+                __typename
                 gatsbyImageData(layout: CONSTRAINED)
-              }
-              content {
-                raw
-                references {
-                  title
-                  contentful_id
-                  __typename
-                  gatsbyImageData(layout: CONSTRAINED)
-                }
               }
             }
           }
         }
       }
+    }
     `
   ).then(result => {
     if (result.errors) {
       throw result.errors
     }
 
-    const blogs = result.data.allContentfulEducation.edges.map(
+    const blogs = result.data.allContentfulHomeNeeds.edges.map(
       node => node.node
     )
+
+    console.log(blogs)
+
     const categories = [...new Set(blogs.map(blog => blog.category))]
 
     categories.forEach(category => {
