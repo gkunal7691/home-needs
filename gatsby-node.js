@@ -2,43 +2,41 @@ const path = require(`path`)
 
 exports.createPages = ({ graphql, actions }) => {
   const BlogPost = path.resolve("./src/templates/blog-post.js")
-  const BlogCategory = path.resolve(
-    "./src/templates/blog-category.js"
-  )
+  const BlogCategory = path.resolve("./src/templates/blog-category.js")
 
   return graphql(
     `
-    query pagesQuery {
-      allContentfulHomeNeeds {
-        edges {
-          node {
-            id
-            slug
-            title
-            description
-            authorName
-            postedAt
-            category
-            bannerImage {
+      query pagesQuery {
+        allContentfulHomeNeeds {
+          edges {
+            node {
+              id
+              slug
               title
-              file {
-                url
-              }
-              gatsbyImageData(layout: CONSTRAINED)
-            }
-            content {
-              raw
-              references {
+              description
+              authorName
+              postedAt
+              category
+              bannerImage {
                 title
-                contentful_id
-                __typename
+                file {
+                  url
+                }
                 gatsbyImageData(layout: CONSTRAINED)
+              }
+              content {
+                raw
+                references {
+                  title
+                  contentful_id
+                  __typename
+                  gatsbyImageData(layout: CONSTRAINED)
+                }
               }
             }
           }
         }
       }
-    }
     `
   ).then(result => {
     if (result.errors) {
@@ -55,7 +53,7 @@ exports.createPages = ({ graphql, actions }) => {
 
     categories.forEach(category => {
       actions.createPage({
-        path: `/blog/${category.toLowerCase()}/`,
+        path: `/blog/${category.toLowerCase().replaceAll(" ", "-")}/`,
         component: BlogCategory,
         context: { category },
       })
@@ -63,7 +61,9 @@ exports.createPages = ({ graphql, actions }) => {
 
     blogs.forEach(blog => {
       actions.createPage({
-        path: `/blog/${blog.category.toLowerCase()}/${blog.slug}/`,
+        path: `/blog/${blog.category.toLowerCase().replaceAll(" ", "-")}/${
+          blog.slug
+        }/`,
         component: BlogPost,
         context: blog,
       })
