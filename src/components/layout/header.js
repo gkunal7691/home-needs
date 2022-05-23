@@ -1,4 +1,3 @@
-
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import React, { useEffect, useRef, useState } from "react"
@@ -19,7 +18,7 @@ const Header = ({ active }) => {
           !!sticky.current && sticky.current.classList.remove("secondary")
           setSticker(false)
         } else {
-          !!sticky.current && sticky.current.classList.add("secondary");
+          !!sticky.current && sticky.current.classList.add("secondary")
           !!sticky.current && sticky.current.classList.remove("bg-transparent")
           setSticker(true)
         }
@@ -70,8 +69,8 @@ const Header = ({ active }) => {
               Our Program
             </Link> */}
             <Link
-              className={`nav-link ${active === "all-blogs" ? "active" : ""}`}
-              to="/all-blogs/"
+              className={`nav-link ${active === "blogs" ? "active" : ""}`}
+              to="/blogs/"
             >
               All Blogs
             </Link>
@@ -82,7 +81,6 @@ const Header = ({ active }) => {
               Contact Us
             </Link>
           </Nav>
-         
         </Navbar.Collapse>
       </Container>
     </Navbar>

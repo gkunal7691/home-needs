@@ -11,7 +11,7 @@ export default function ContactUs({data}) {
     const blogPosts = data.allContentfulHomeNeeds.edges.map(node => node.node)
     console.log(blogPosts);
   return (
-    <Layout active={"all-blogs"}>
+    <Layout active={"blogs"}>
       <Seo
         title="Talk to us"
         description="We are always ready to help for any kind of support. Fill out the contact us form, we will contact you shortly or mail us at info@homeneeds.com"
@@ -22,7 +22,7 @@ export default function ContactUs({data}) {
             className="fnt-md-18 fnt-lg-18 fnt-400 fnt-lg-500 text-black text-decoration-none"
             to="/"
           >
-            <span className="text-black mb-0">Actuate Minds</span>
+            <span className="text-black mb-0">Home Needs</span>
             <img
               className="mx-1"
               src={breadcrumIcon}
@@ -33,7 +33,7 @@ export default function ContactUs({data}) {
 
           <Link
             className="fnt-md-18 fnt-lg-18 fnt-400 fnt-lg-500 text-black text-decoration-none"
-            to="/all-blogs/"
+            to="/blogs/"
           >
             <span className="text-black mb-0">All Blogs</span>
             {/* <img
