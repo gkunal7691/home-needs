@@ -62,7 +62,7 @@ export default function ContactUs({data}) {
               } ${i === 0 ? "col-md-4" : i === 1 ? "col-lg-4" : "col-lg-4"}`}
             >
               <Link
-                to={`/blog/${post.category.toLowerCase()}/${post.slug}/`}
+                to={`/blog/${post.category.toLowerCase().replaceAll(" ", "-")}/${post.slug}/`}
                 className="text-decoration-none"
               >
                 <div

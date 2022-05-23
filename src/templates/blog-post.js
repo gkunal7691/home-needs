@@ -5,9 +5,9 @@ import { renderRichText } from "gatsby-source-contentful/rich-text"
 import React from "react"
 import breadcrumIcon from "../../assets/images/angle-right-solid.svg"
 import "../../assets/styles/blog-post.scss"
-import Layout from "../components/layout/layout" 
-import Seo from "../components/seo" 
-import dateFormat from 'dateformat';
+import Layout from "../components/layout/layout"
+import Seo from "../components/seo"
+import dateFormat from "dateformat"
 
 export default function BlogPost({ pageContext }) {
   console.log(pageContext)
@@ -91,14 +91,13 @@ export default function BlogPost({ pageContext }) {
     },
   }
 
-
   return (
     <Layout active={"blog"}>
       <Seo
         jsonLd={{
           url:
             "https://www.actuateminds.com/blog/" +
-            pageContext.category.toLowerCase() +
+            pageContext.category.toLowerCase().replaceAll(" ", "-") +
             "/" +
             pageContext.slug +
             "/",
@@ -109,7 +108,7 @@ export default function BlogPost({ pageContext }) {
           description: pageContext.description,
           category: pageContext.category,
           isQuestion: pageContext.isQuestion,
-          faq: pageContext.faq
+          faq: pageContext.faq,
         }}
         title={pageContext.title}
         description={pageContext.description}
@@ -145,7 +144,11 @@ export default function BlogPost({ pageContext }) {
             </Link>
             <Link
               className="fnt-md-18 fnt-lg-18 fnt-400 fnt-lg-500 text-black text-decoration-none"
-              to={"/blog/" + pageContext.category.toLowerCase() + "/"}
+              to={
+                "/blog/" +
+                pageContext.category.toLowerCase().replaceAll(" ", "-") +
+                "/"
+              }
             >
               <span className="text-black mb-0">{pageContext.category}</span>
               <img

@@ -2,13 +2,12 @@ import { graphql, Link } from "gatsby"
 import React from "react"
 import "../../assets/styles/blog.scss"
 import breadcrumIcon from "../../assets/images/angle-right-solid.svg"
-import Layout from "../components/layout/layout" 
+import Layout from "../components/layout/layout"
 import Seo from "../components/seo"
-import dateFormat from 'dateformat';
+import dateFormat from "dateformat"
 
 export default function BlogCategory({ data }) {
   const blogPosts = data.allContentfulHomeNeeds.edges.map(node => node.node)
-
 
   return (
     <Layout active={"blog"}>
@@ -63,7 +62,9 @@ export default function BlogCategory({ data }) {
               } ${i === 0 ? "col-md-4" : i === 1 ? "col-lg-4" : "col-lg-4"}`}
             >
               <Link
-                to={`/blog/${post.category.toLowerCase()}/${post.slug}/`}
+                to={`/blog/${post.category
+                  .toLowerCase()
+                  .replaceAll(" ", "-")}/${post.slug}/`}
                 className="text-decoration-none"
               >
                 <div
