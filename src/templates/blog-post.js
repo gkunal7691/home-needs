@@ -96,7 +96,7 @@ export default function BlogPost({ pageContext }) {
       <Seo
         jsonLd={{
           url:
-            "https://www.actuateminds.com/blog/" +
+            "https://www.actuateminds.com/blogs/" +
             pageContext.category.toLowerCase().replaceAll(" ", "-") +
             "/" +
             pageContext.slug +
@@ -132,7 +132,7 @@ export default function BlogPost({ pageContext }) {
 
             <Link
               className="fnt-md-18 fnt-lg-18 fnt-400 fnt-lg-500 text-black text-decoration-none"
-              to="/blog/"
+              to="/blogs/"
             >
               <span className="text-black mb-0">Blogs</span>
               <img
@@ -145,7 +145,7 @@ export default function BlogPost({ pageContext }) {
             <Link
               className="fnt-md-18 fnt-lg-18 fnt-400 fnt-lg-500 text-black text-decoration-none"
               to={
-                "/blog/" +
+                "/blogs/" +
                 pageContext.category.toLowerCase().replaceAll(" ", "-") +
                 "/"
               }

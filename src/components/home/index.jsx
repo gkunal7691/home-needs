@@ -20,7 +20,7 @@ export default function Home() {
               } ${i === 0 ? "col-md-4" : i === 1 ? "col-lg-4" : "col-lg-4"}`}
             >
               <Link
-                to={`/blog/${category.toLowerCase().replaceAll(" ", "-")}/`}
+                to={`/blogs/${category.toLowerCase().replaceAll(" ", "-")}/`}
                 className="text-decoration-none"
               >
                 <div

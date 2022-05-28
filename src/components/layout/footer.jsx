@@ -112,51 +112,10 @@ const Footer = () => {
                   <div className="mb-3">
                     <Link
                       className="fnt-md-20 fnt-lg-22 fnt-500 text-white text-decoration-none"
-                      to="/our-program/"
-                    >
-                      Our Program
-                    </Link>
-                  </div>
-                  <div className="mb-3">
-                    <Link
-                      className="fnt-md-20 fnt-lg-22 fnt-500 text-white text-decoration-none"
-                      to="/blog/"
+                      to="/blogs/"
                     >
                       Blogs
                     </Link>
-                  </div>
-                  <div className="mb-3">
-                    <Link
-                      className="fnt-md-20 fnt-lg-22 fnt-500 text-white text-decoration-none"
-                      to="/privacy-policy/"
-                    >
-                      Privacy Policy
-                    </Link>
-                  </div>
-                  <div className="mb-3">
-                    <Link
-                      className="fnt-md-20 fnt-lg-22 fnt-500 text-white text-decoration-none mb-md-3"
-                      to="/terms-conditions/"
-                    >
-                      Terms & Conditions
-                    </Link>
-                  </div>
-                  <div className="mb-3">
-                    <Link
-                      className="fnt-md-20 fnt-lg-22 fnt-500 text-white text-decoration-none mb-md-3"
-                      to="/contact-us/"
-                    >
-                      Contact
-                    </Link>
-                  </div>
-                  <div>
-                    <a
-                      className="fnt-md-20 fnt-lg-22 fnt-500 text-white text-decoration-none mb-md-3"
-                      href="https://www.tools.softobotics.com/"
-                      alt="Online_Tools"
-                    >
-                      Online Tools
-                    </a>
                   </div>
                 </div>
 
@@ -208,43 +167,10 @@ const Footer = () => {
                   <div className="mb-md-3">
                     <Link
                       className="fnt-md-20 fnt-lg-22 fnt-500 text-white text-decoration-none"
-                      to="/our-program/"
-                    >
-                      Our Program
-                    </Link>
-                  </div>
-                  <div className="mb-md-3">
-                    <Link
-                      className="fnt-md-20 fnt-lg-22 fnt-500 text-white text-decoration-none"
-                      to="/blog/"
+                      to="/blogs/"
                     >
                       Blogs
                     </Link>
-                  </div>
-                  <div className="mb-md-3">
-                    <Link
-                      className="fnt-md-20 fnt-lg-22 fnt-500 text-white text-decoration-none"
-                      to="/privacy-policy/"
-                    >
-                      Privacy Policy
-                    </Link>
-                  </div>
-                  <div className="mb-md-3">
-                    <Link
-                      className="fnt-md-20 fnt-lg-22 fnt-500 text-white text-decoration-none mb-md-3"
-                      to="/terms-conditions/"
-                    >
-                      Terms & Conditions
-                    </Link>
-                  </div>
-                  <div>
-                    <a
-                      className="fnt-md-20 fnt-lg-22 fnt-500 text-white text-decoration-none mb-md-3"
-                      href="https://www.tools.softobotics.com/"
-                      alt="Online Tools"
-                    >
-                      Online Tools
-                    </a>
                   </div>
                 </div>
 

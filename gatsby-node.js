@@ -53,7 +53,7 @@ exports.createPages = ({ graphql, actions }) => {
 
     categories.forEach(category => {
       actions.createPage({
-        path: `/blog/${category.toLowerCase().replaceAll(" ", "-")}/`,
+        path: `/blogs/${category.toLowerCase().replaceAll(" ", "-")}/`,
         component: BlogCategory,
         context: { category },
       })
@@ -61,7 +61,7 @@ exports.createPages = ({ graphql, actions }) => {
 
     blogs.forEach(blog => {
       actions.createPage({
-        path: `/blog/${blog.category.toLowerCase().replaceAll(" ", "-")}/${
+        path: `/blogs/${blog.category.toLowerCase().replaceAll(" ", "-")}/${
           blog.slug
         }/`,
         component: BlogPost,

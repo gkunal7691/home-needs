@@ -33,7 +33,7 @@ export default function BlogCategory({ data }) {
 
           <Link
             className="fnt-md-18 fnt-lg-18 fnt-400 fnt-lg-500 text-black text-decoration-none"
-            to="/blog/"
+            to="/blogs/"
           >
             <span className="text-black mb-0">Blogs</span>
             <img
@@ -62,7 +62,7 @@ export default function BlogCategory({ data }) {
               } ${i === 0 ? "col-md-4" : i === 1 ? "col-lg-4" : "col-lg-4"}`}
             >
               <Link
-                to={`/blog/${post.category
+                to={`/blogs/${post.category
                   .toLowerCase()
                   .replaceAll(" ", "-")}/${post.slug}/`}
                 className="text-decoration-none"
