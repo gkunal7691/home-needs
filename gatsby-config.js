@@ -43,5 +43,13 @@ module.exports = {
         // environment: 'Testing'
       },
     },
+    {
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: "G-K8H957GMRV",
+        includeInDevelopment: true,
+        routeChangeEventName: "routechange",
+      },
+    },
   ],
 }
