@@ -111,8 +111,8 @@ const Contact = () => {
                 <p className="d-flex align-items-center fnt-lg-24 fnt-500 text-clr54 mb-0 px-3">
                 <a
                   className="fnt-lg-24 fnt-500 text-clr54 text-decoration-none"
-                  href="tel:+919986882266">
-                    +91 9986882266
+                  href="tel:+919483882266">
+                    +91 9483882266
                   </a>
                 </p>
               </div>

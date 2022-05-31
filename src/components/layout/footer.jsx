@@ -184,7 +184,7 @@ const Footer = () => {
                       src="../../../assets/images/Contact-icon.svg"
                       alt="contact"
                     />
-                    <a className="text-white text-decoration-none" href="tel:+919986882266">+91 9986882266</a>
+                    <a className="text-white text-decoration-none" href="tel:+919483882266">+91 9483882266</a>
                   </p>
                   <p className="fnt-md-20 fnt-lg-22 fnt-500">
                     <StaticImage
