@@ -13,8 +13,7 @@ export default function ContactUs({data}) {
   return (
     <Layout active={"blogs"}>
       <Seo
-        title="Talk to us"
-        description="We are always ready to help for any kind of support. Fill out the contact us form, we will contact you shortly or mail us at info@homeneeds.com"
+        title="Blogs"
       />
        <div className="container mt-3 border-bottom pb-4">
         <div className="pt-4 pb-3 d-flex back-icon">

@@ -8,7 +8,7 @@ export default function ContactUs() {
     <Layout active={"contact"}>
       <Seo
         title="Talk to us"
-        description="We are always ready to help for any kind of support. Fill out the contact us form, we will contact you shortly or mail us at info@homeneeds.com"
+        description="We are always ready to help for any kind of support. Fill out the contact us form, we will contact you shortly or send us mail us at ak13@outlook.in"
       />
       <Contact />
     </Layout>
