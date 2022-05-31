@@ -40,13 +40,13 @@ const Header = ({ active }) => {
           <Link to="/">
             {sticker ? (
               <StaticImage
-                src="../../../assets/images/logo.svg"
+                src="../../../assets/images/logo.png"
                 alt="home needs logo"
                 className="me-0 w-100"
               />
             ) : (
               <StaticImage
-                src="../../../assets/images/logo.svg"
+                src="../../../assets/images/logo.png"
                 alt="home needs logo"
                 className="me-0 w-100"
               />

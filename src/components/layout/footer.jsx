@@ -102,7 +102,7 @@ const Footer = () => {
               <div className="col-md-5 mb-4">
                 <Link to="/">
                   <StaticImage
-                    src="../../../assets/images/WebsiteFooterLogo.svg"
+                    src="../../../assets/images/logo-footer.png"
                     alt="home_needs-logo"
                     className="mb-3"
                   />
@@ -121,7 +121,7 @@ const Footer = () => {
 
                 <div className="pt-md-2 pb-md-5 footer-icon-sm">
                   <a
-                    href="https://www.facebook.com/actuateminds"
+                    href="https://www.facebook.com"
                     target="_blank"
                     rel="noreferrer"
                     className="me-xl-4 text-reset"
@@ -132,7 +132,7 @@ const Footer = () => {
                     />
                   </a>
                   <a
-                    href="https://www.instagram.com/actuateminds/"
+                    href="https://www.instagram.com/homeneeds_india/"
                     target="_blank"
                     rel="noreferrer"
                     className="me-xl-4 text-reset"
@@ -144,7 +144,7 @@ const Footer = () => {
                   </a>
                  
                   <a
-                    href="https://twitter.com/actuateminds"
+                    href="https://twitter.com/homeneeds_india"
                     target="_blank"
                     rel="noreferrer"
                     className="me-xl-4 text-reset"
@@ -184,15 +184,15 @@ const Footer = () => {
                       src="../../../assets/images/Contact-icon.svg"
                       alt="contact"
                     />
-                    +91 8147594806
+                    <a className="text-white text-decoration-none" href="tel:+919986882266">+91 9986882266</a>
                   </p>
-                  <p className="fnt-md-20 fnt-lg-22 fnt-500 text-white">
+                  <p className="fnt-md-20 fnt-lg-22 fnt-500">
                     <StaticImage
                       className="d-lg-none me-3"
                       src="../../../assets/images/Mail-icon.svg"
                       alt="home_needs-email"
                     />
-                    info@homeneeds.com
+                    <a className="text-white text-decoration-none" href="mailto:ak13@outlook.in">ak13@outlook.in</a>
                   </p>
                   <p className="fnt-md-20 fnt-lg-22 fnt-500 text-white">
                     <StaticImage
@@ -209,7 +209,7 @@ const Footer = () => {
         </section>
 
         <div className="text-center p-4 fnt-md-22 fnt-lg-22 text-white copyright">
-          Copyright © 2021 &nbsp;
+          Copyright © {new Date().getFullYear()} &nbsp;
           <a className="text-reset" href="https://www.homeneeds.com/">
             Home Needs
           </a>

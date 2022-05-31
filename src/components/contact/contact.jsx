@@ -109,13 +109,21 @@ const Contact = () => {
               <div className="d-flex mb-md-4">
                 <img src={contactLogo} alt="contact-logo" />
                 <p className="d-flex align-items-center fnt-lg-24 fnt-500 text-clr54 mb-0 px-3">
-                  +91 8147594806
+                <a
+                  className="fnt-lg-24 fnt-500 text-clr54 text-decoration-none"
+                  href="tel:+919986882266">
+                    +91 9986882266
+                  </a>
                 </p>
               </div>
               <div className="d-flex mb-md-4">
                 <img src={Mail} alt="Mail" />
-                <p className="d-flex align-items-center fnt-lg-24 fnt-500 text-clr54 mb-0 px-3">
-                  info@homeneeds.com
+                <p className="d-flex align-items-center mb-0 px-3">
+                  <a
+                  className="fnt-lg-24 fnt-500 text-clr54 text-decoration-none"
+                  href="mailto:ak13@outlook.in">
+                    ak13@outlook.in
+                  </a>
                 </p>
               </div>
               <div className="d-flex mb-md-4">

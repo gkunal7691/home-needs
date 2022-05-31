@@ -10,7 +10,7 @@ export default function Home() {
    <>
       <div className="container mt-md-5 mt-4 border-bottom pb-4">
         <h1 className="text-center">Checkout our latest blogs</h1>
-        <p className="text-center pb-4">Read our quality educational blogs related to latest topics around maths and science which are explained in easy and simple way.</p>
+        <p className="text-center pb-4">Read our quality educational blogs on different topics related to your home which are explained in an easy and simple way.</p>
         <div className="row">
           {categorires.map((category, i) => (
             <div

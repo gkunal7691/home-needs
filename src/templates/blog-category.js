@@ -13,7 +13,7 @@ export default function BlogCategory({ data }) {
     <Layout active={"blog"}>
       <Seo
         title={`Checkout our weekly ${blogPosts[0].category} blogs`}
-        description={`Read our quality educational blogs related to latest topics around ${blogPosts[0].category} which are explained in easy and simple way.`}
+        description={`Read our quality educational blogs on different topics related to your home which are explained in an easy and simple way.`}
       />
 
       <div className="container mt-3 border-bottom pb-4">
@@ -49,9 +49,7 @@ export default function BlogCategory({ data }) {
         </div>
         <h1 className="text-center">{blogPosts[0].category} blogs</h1>
         <p className="text-center pb-4">
-          {`Read our quality educational blogs related to latest 
-          ${blogPosts[0].category} topics which are explained in easy and simple`}
-          way.
+          {`Read our quality educational blogs on different topics related to your home which are explained in an easy and simple way.`}
         </p>
         <div className="row">
           {blogPosts.map((post, i) => (
