@@ -96,7 +96,7 @@ export default function BlogPost({ pageContext }) {
       <Seo
         jsonLd={{
           url:
-            "https://www.actuateminds.com/blogs/" +
+            "https://www.homeneeds.info/blogs/" +
             pageContext.category.toLowerCase().replaceAll(" ", "-") +
             "/" +
             pageContext.slug +

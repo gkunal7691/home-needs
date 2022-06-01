@@ -51,5 +51,25 @@ module.exports = {
         routeChangeEventName: "routechange",
       },
     },
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        createLinkInHead: false,
+      },
+    },
+    "gatsby-plugin-force-trailing-slashes",
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: `https://www.homeneeds.info`,
+        sitemap: `https://www.homeneeds.info/sitemap/sitemap-0.xml`,
+        policy: [
+          {
+            userAgent: "*",
+            allow: "/",
+          },
+        ],
+      },
+    },
   ],
 }
