@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `HomeNeeds Blog`,
     description: `Read our quality educational blogs on different topics related to your home which are explained in an easy and simple way.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    author: `@softobotics`,
+    siteUrl: `https://www.homeneeds.info/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
