@@ -176,11 +176,16 @@ export default function BlogPost({ pageContext }) {
           <p className="text-center px-2">
             <b>{pageContext.description}</b>
           </p>
-          <GatsbyImage
-            className="w-100 blog-post_image"
-            alt={pageContext.bannerImage.title}
-            image={bannerImage}
-          />
+          <div className="d-flex justify-content-center">
+            <GatsbyImage
+              className="blog-post_image"
+              alt={pageContext.bannerImage.title}
+              image={bannerImage}
+              imgStyle={{
+                height: "auto",
+              }}
+            />
+          </div>
 
           <div className="blog-post-text">
             <p>{renderRichText(pageContext.content, options)}</p>

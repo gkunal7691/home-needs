@@ -22,7 +22,7 @@ exports.createPages = ({ graphql, actions }) => {
                 file {
                   url
                 }
-                gatsbyImageData(layout: CONSTRAINED)
+                gatsbyImageData(layout: FIXED)
               }
               content {
                 raw
